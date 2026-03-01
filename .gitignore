@@ -1,0 +1,35 @@
+node_modules
+build
+/generated/prisma
+
+# dependências
+node_modules/
+
+# build / gerados
+dist/
+generated/
+
+# env (nunca subir senhas)
+.env
+.env.*
+!.env.example
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# testes / coverage
+coverage/
+
+# editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# sistema operacional
+.DS_Store
+Thumbs.db
