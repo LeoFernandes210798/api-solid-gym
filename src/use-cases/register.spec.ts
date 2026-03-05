@@ -26,16 +26,16 @@ describe('Register Use Case', () => {
   it('should not able to register with same email twice', async () => {
     const userRepository = new InMemoryUsersRepository()
     const registerUseCase = new RegisterUseCase(userRepository)
-    
+
     const email = 'johndoe@example.com'
 
-    const { user } = await registerUseCase.execute({
+    await registerUseCase.execute({
       name: 'John Doe',
       email,
       password: '123456',
     })
 
-    await expect(()=>
+    await expect(() =>
       registerUseCase.execute({
         name: 'John Doe',
         email,
