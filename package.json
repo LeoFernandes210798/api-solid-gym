@@ -8,7 +8,10 @@
     "start": "node build/server.js",
     "build": "tsup src --out-dir build",
     "test": "vitest run",
-    "test:watch": "vitest"    
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:ui": "vitest --ui"
+
   },
   "keywords": [],
   "author": "",
@@ -31,6 +34,8 @@
     "@rocketseat/eslint-config": "2.2.2",
     "@types/bcryptjs": "3.0.0",
     "@types/node": "25.3.2",
+    "@vitest/coverage-v8": "4.0.18",
+    "@vitest/ui": "4.0.18",
     "eslint": "^8.0.0",
     "eslint-config-prettier": "^8.10.2",
     "eslint-plugin-import": "^2.32.0",
